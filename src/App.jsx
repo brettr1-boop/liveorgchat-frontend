@@ -10,7 +10,7 @@ function App() {
   const [announcements, setAnnouncements] = useState([]);
 
   const fetchAnnouncements = async () => {
-    const res = await axios.get('http://localhost:5000/api/announcements');
+    const res = await axios.get('https://liveorgchat-backend.onrender.com/api/announcements');
     setAnnouncements(res.data);
   };
 
